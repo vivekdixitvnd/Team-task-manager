@@ -93,6 +93,8 @@ The frontend runs on Vite's default port (usually `http://localhost:5173`).
 
 This project is available under the ISC license.
 
+## both frontend and backend deployed on render
+
 
 
 
