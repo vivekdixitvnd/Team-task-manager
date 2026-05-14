@@ -8,7 +8,12 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://vivek-task-manager-9fak.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', require('./routes/authRoutes'));
