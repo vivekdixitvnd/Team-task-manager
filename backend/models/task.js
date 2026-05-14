@@ -14,11 +14,11 @@ const taskSchema = new mongoose.Schema({
   dueDate: Date,
   project: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Project'
+    ref: 'project'
   },
   assignedTo: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
+    ref: 'user'
   }
 }, { timestamps: true });
 
